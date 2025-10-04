@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+body{
+    background-color: lightblue;
+}
+#timer {
+    position: absolute;
+    top: 46%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Precise centering */
+    font-size: 40px;
+    color: white;
+    font-family: 'Sour Gummy', serif; /* Use Sour Gummy font for the timer */
+    font-weight: bold;
+    z-index: 1;
+}
+#timer:hover {
+    color: yellow;
+}
+
+#timer.warning {
+    color: red;
+    background-color: yellow;  /* Background color to make it stand out */
+    border-radius: 5px;  /* Rounded corners */
+    padding: 5px 10px;  /* Padding to make the background stand out */
+}
+
+#apple {
+    display: block;
+    margin: 0 auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.button-container {
+    display: flex;
+    justify-content: space-evenly; /* Space buttons equally */
+    position: absolute;
+    top: 62%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%; 
+}
+button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+#start {
+    background-color: green;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#start:hover {
+    border: 2px solid black;
+}
+#pause {
+    background-color: yellow;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#pause:hover {
+    border: solid black;
+}
+#stop {
+    font-family: 'Roboto', sans-serif;
+    background-color: red;
+    color: white;
+}
+
+#stop:hover {
+    border:2px solid black;
+}
